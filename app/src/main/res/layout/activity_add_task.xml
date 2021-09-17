@@ -8,7 +8,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Criar Tarefa"
+        app:title="@string/label_new_task"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_navigate"
         />
@@ -35,7 +35,7 @@
         android:layout_marginTop="16dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
-        android:hint="Título"
+        android:hint="@string/label_title"
         app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -55,7 +55,7 @@
         app:layout_constraintEnd_toStartOf="@id/til_hour"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginTop="8dp"
-        android:hint="Data"
+        android:hint="@string/label_date"
         app:startIconDrawable="@drawable/ic_baseline_calendar_today_24"
         >
 
@@ -73,7 +73,7 @@
         android:layout_width="0dp"
         app:startIconDrawable="@drawable/ic_baseline_timer"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Hora"
+        android:hint="@string/label_hour"
         app:layout_constraintTop_toTopOf="@id/til_data"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
         app:layout_constraintStart_toEndOf="@id/til_data"
@@ -94,7 +94,7 @@
             app:layout_constraintStart_toStartOf="@id/guide_start"
             app:layout_constraintBottom_toTopOf="@id/btn_new_task"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:text="Cancelar"
+            android:text="@string/label_cancel"
             android:textAllCaps="false"
             />
 
@@ -106,7 +106,7 @@
             app:layout_constraintEnd_toEndOf="@id/guide_end"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="16dp"
-            android:text="Criar tarefa"
+            android:text="@string/label_nova_tarefa"
             android:textAllCaps="false"
             style="@style/Widget.MaterialComponents.Button"
             />
