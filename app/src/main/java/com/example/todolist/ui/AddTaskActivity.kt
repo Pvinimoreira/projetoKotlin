@@ -1,7 +1,6 @@
 package com.example.todolist.ui
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.todolist.databinding.ActivityAddTaskBinding
 import com.example.todolist.extensions.format
